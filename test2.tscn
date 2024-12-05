@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://buqakfiv5pd4c"]
+
+[ext_resource type="Shader" path="res://border_glow_shader.gdshader" id="1_kmnf8"]
+[ext_resource type="Texture2D" uid="uid://by0rqyvvnwwsf" path="res://icon.svg" id="2_mmwap"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gw4y8"]
+shader = ExtResource("1_kmnf8")
+shader_parameter/glow_color = Vector4(1, 1, 0, 1)
+shader_parameter/glow_size = 5.0
+
+[node name="Test2" type="TextureRect"]
+material = SubResource("ShaderMaterial_gw4y8")
+offset_right = 536.0
+offset_bottom = 432.0
+texture = ExtResource("2_mmwap")

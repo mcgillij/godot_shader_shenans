@@ -1,5 +1,8 @@
 # Godot 4+ specific ignores
 .godot/
+addons/
+examples/
+example/
 
 # Godot-specific ignores
 .import/
